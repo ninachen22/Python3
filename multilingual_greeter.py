@@ -14,9 +14,7 @@ def name_input():
     name = input("Please enter your name in the chosen language: ")
     return name
 
-def greet():
-    language = input("Please choose a language: English, Spanish, Chinese\n")
-    name = ""
+def greet(language):
     if language == "English":
         name = input("Please enter your name: ")
         print ("Hello " + name + "!")
@@ -27,4 +25,4 @@ def greet():
         name = input("请输入你的名字: ")
         print (u"你好 " + name + u"！")
 
-greet()
+greet(language_input())
